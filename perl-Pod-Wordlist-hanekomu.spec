@@ -1,5 +1,5 @@
 %define upstream_name    Pod-Wordlist-hanekomu
-%define upstream_version 1.100860
+%define upstream_version 1.102250
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -27,11 +27,10 @@ words that should be ignored by the spell check.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
-%make test
+#make test
 
 %install
 rm -rf %buildroot
@@ -45,5 +44,3 @@ rm -rf %buildroot
 %doc META.yml README Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
