@@ -1,5 +1,5 @@
 %define upstream_name    Pod-Wordlist-hanekomu
-%define upstream_version 1.102340
+%define upstream_version 1.102640
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
