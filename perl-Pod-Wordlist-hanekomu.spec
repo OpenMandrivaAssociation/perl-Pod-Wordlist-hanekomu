@@ -1,15 +1,15 @@
 %define upstream_name    Pod-Wordlist-hanekomu
-%define upstream_version 1.130240
+%define upstream_version 1.132680
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.130240
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Add words for spell checking POD
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Pod/Pod-Wordlist-hanekomu-1.130240.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Pod/Pod-Wordlist-hanekomu-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
@@ -72,4 +72,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Mar 27 2010 cpan2dist 0.02-1mdv
 - initial mdv release, generated with cpan2dist
+
 
