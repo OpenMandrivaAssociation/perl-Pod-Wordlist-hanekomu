@@ -8,7 +8,7 @@ Release:	3
 Summary:	Add words for spell checking POD
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Pod/Pod-Wordlist-hanekomu-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
