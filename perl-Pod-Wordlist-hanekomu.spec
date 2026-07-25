@@ -2,14 +2,14 @@
 %define upstream_version 1.132680
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Add words for spell checking POD
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Pod/Pod-Wordlist-hanekomu-%{upstream_version}.tar.gz
+Url:		https://github.com/dagolden/Pod-Wordlist-hanekomu
+Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Pod-Wordlist-hanekomu-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
